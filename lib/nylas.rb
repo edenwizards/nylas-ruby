@@ -53,6 +53,7 @@ require_relative "nylas/draft"
 require_relative "nylas/message"
 require_relative "nylas/new_message"
 require_relative "nylas/raw_message"
+require_relative "nylas/resource"
 require_relative "nylas/thread"
 require_relative "nylas/webhook"
 
@@ -83,6 +84,7 @@ module Nylas
   Types.registry[:physical_address] = Types::ModelType.new(model: PhysicalAddress)
   Types.registry[:phone_number] = Types::ModelType.new(model: PhoneNumber)
   Types.registry[:recurrence] = Types::ModelType.new(model: Recurrence)
+  Types.registry[:resource] = Types::ModelType.new(model: Resource)
   Types.registry[:thread] = Types::ModelType.new(model: Thread)
   Types.registry[:timespan] = Types::ModelType.new(model: Timespan)
   Types.registry[:web_page] = Types::ModelType.new(model: WebPage)
