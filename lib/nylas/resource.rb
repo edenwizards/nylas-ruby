@@ -15,7 +15,7 @@ module Nylas
     attribute :building, :string
     attribute :capacity, :integer
     attribute :floor_name, :string
-    attribute :floor_number, :string
+    attribute :floor_number, :integer
 
   end
 
