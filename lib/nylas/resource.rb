@@ -9,10 +9,13 @@ module Nylas
     allows_operations(listable: true)
 
     attribute :email, :string
-
     attribute :object, :string
-
     attribute :name, :string
+
+    attribute :building, :string
+    attribute :capacity, :integer
+    attribute :floor_name, :string
+    attribute :floor_number, :string
 
   end
 
