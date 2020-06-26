@@ -15,8 +15,11 @@ module Nylas
 
     attribute :name, :string
     attribute :description, :string
+    attribute :location, :string
+    attribute :timezone, :string
 
     attribute :read_only, :boolean
+    attribute :is_primary, :boolean
 
     def read_only?
       read_only == true
